@@ -6,6 +6,7 @@
     --Roboto: 'Roboto', sans-serif;
     --dark: #3c393d;
     --exDark: #2b2b2b;
+    --aquamarine: #7fffd4;
 }
 *{
     padding: 0;
@@ -34,38 +35,6 @@ header{
     flex-direction: column;
     justify-content: stretch;
 }
-.navbar{
-    background: rgba(0, 0, 0, 0.6);
-    padding: 1.2rem;
-}
-.navbar-brand{
-    color: #fff;
-    font-size: 2rem;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    font-family: var(--Playfair);
-    letter-spacing: 1px;
-}
-.navbar-nav{
-    padding: 0.8rem 0 0.2rem 0;
-    text-align: center;
-}
-.navbar-nav a{
-    text-transform: uppercase;
-    font-family: var(--Roboto);
-    letter-spacing: 1px;
-    font-weight: 500;
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    padding: 0.4rem 0.1rem;
-    letter-spacing: 3px;
-    transition: opacity 0.5s ease;
-}
-.navbar-nav a:hover{
-    opacity: 0.7;
-}
 .banner{
     flex: 1;
     display: flex;
@@ -81,7 +50,7 @@ header{
 }
 .banner-title span{
     font-family: var(--Playfair);
-    color: var(--exDark);
+    color: var(--aquamarine);
 }
 .banner p{
     padding: 1rem 0 2rem 0;
@@ -91,36 +60,9 @@ header{
     font-weight: 300;
     word-spacing: 2px;
 }
-.banner form{
-    background: #fff;
-    border-radius: 2rem;
-    padding: 0.6rem 1rem;
-    display: flex;
-    justify-content: space-between;
-}
-.search-input{
-    font-family: var(--Roboto);
-    font-size: 1.1rem;
-    width: 100%;
-    outline: 0;
-    padding: 0.6rem 0;
-    border: none;
-}
-.search-input::placeholder{
-    text-transform: capitalize;
-}
-.search-btn{
-    width: 40px;
-    font-size: 1.1rem;
-    color: var(--dark);
-    border: none;
-    background: transparent;
-    outline: 0;
-    cursor: pointer;
-}
 
-/* design */
-.design{
+/* recent-anime */
+.recent-anime{
     padding: 4.5rem 0;
 }
 .title{
@@ -135,19 +77,19 @@ header{
     text-transform: uppercase;
     padding: 0.6rem 0;
 }
-.design-content{
+.recent-anime-content{
     margin: 2rem 0;
 }
-.design-item{
+.recent-anime-item{
     cursor: pointer;
     margin: 1.5rem 0;
 }
-.design-img{
+.recent-anime-img{
     position: relative;
     overflow: hidden;
     height: 550px;
 }
-.design-img::after{
+.recent-anime-img::after{
     position: absolute;
     content: "";
     top: 0;
@@ -156,10 +98,10 @@ header{
     height: 100%;
     background: rgba(0, 0, 0, 0.3);
 }
-.design-img img{
+.recent-anime-img img{
     transition:  all 0.5s ease;
 }
-.design-img span:first-of-type{
+.recent-anime-img span:first-of-type{
     position: absolute;
     z-index: 1;
     top: 10px;
@@ -167,7 +109,7 @@ header{
     color: #fff;
     padding: 0.25rem 1rem;
 }
-.design-img span:last-of-type{
+.recent-anime-img span:last-of-type{
     position: absolute;
     z-index: 1;
     bottom: 10px;
@@ -176,18 +118,18 @@ header{
     font-weight: 700;
     font-size: 1.1rem;
 }
-.design-item:hover img{
+.recent-anime-item:hover img{
     transform: scale(1.2);
 }
 
-.design-title{
+.recent-anime-title{
     padding: 1rem;
     font-size: 1.2rem;
     text-align: center;
     width: 70%;
     margin: 0 auto;
 }
-.design-title a{
+.recent-anime-title a{
     color: var(--dark);
     text-decoration: none;
     text-transform: capitalize;
@@ -251,19 +193,6 @@ header{
 }
 .blog-text a:hover{
     background: var(--exDark);
-}
-
-/* about */
-.about{
-    padding: 4.5rem 0;
-}
-.about-text{
-    margin: 2rem 0;
-}
-.about-text > p{
-    font-size: 1.1rem;
-    padding: 0.6rem 0;
-    opacity: 0.8;
 }
 
 /* footer */
@@ -330,12 +259,12 @@ footer{
     .search-input{
         padding: 0.8rem 0;
     }
-    .design-content{
+    .recent-anime-content{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
-    .design-item{
+    .recent-anime-item{
         margin: 0;
     }
     .blog-content{
@@ -358,7 +287,7 @@ footer{
 }
 
 @media screen and (min-width: 1200px){
-    .design-content{
+    .recent-anime-content{
         grid-template-columns: repeat(3, 1fr);
     }
 }
